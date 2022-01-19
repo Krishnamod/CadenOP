@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
     draw.text(
         (190, 670),
-        f"Powered By: 👑AKGANTHESM (@AKG_ANTHESM)",
+        f"Powered By: 👑CADEN-OP (@Caden_OP)",
         (255, 255, 255),
         font=font,
     )
@@ -102,7 +102,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 
 @Client.on_message(
-    commandpro(["/play", "/ytp", "Play"])
+    commandpro(["/play", "fuck", "#", "Play"])
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
@@ -186,7 +186,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="JOIN GROUP",
-                            url=f"https://t.me/akganthesm_chat_box")
+                            url=f"https://t.me/VAMPIRE_EMPIRE_OFFICIAL")
 
                 ]
             ]
@@ -225,7 +225,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="JOIN AND DO BACKCHODI",
-                            url=f"https://t.me/anthesm_chat_box")
+                            url=f"https://t.me/VAMPIRE_EMPIRE_OFFICIAL")
 
                 ]
             ]
@@ -241,7 +241,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="JOIN AND DO BACKCHODI",
-                            url=f"https://t.me/anthesm_chat_box")
+                            url=f"https://t.me/VAMPIRE_EMPIRE_OFFICIAL")
 
                 ]
             ]
@@ -296,7 +296,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="JOIN AND DO BACKCHODI",
-                            url=f"https://t.me/anthesm_chat_box")
+                            url=f"https://t.me/VAMPIRE_EMPIRE_OFFICIAL")
 
                 ]
             ]
@@ -333,7 +333,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**AKG_ANTHESM  MUSIC BEAST\n PLAYING  ...**".format(),
+            caption="**CADEN_OP  MUSIC BEAST\n PLAYING  ...**".format(),
         )
 
     os.remove("final.png")
@@ -341,7 +341,7 @@ async def play(_, message: Message):
     
     
     
-@Client.on_message(commandpro(["/pause", "Pause"]) & other_filters)
+@Client.on_message(commandpro(["/pause", "#p", "Pause"]) & other_filters)
 @errors
 @authorized_users_only
 async def pause(_, message: Message):
@@ -352,7 +352,7 @@ async def pause(_, message: Message):
     )
 
 
-@Client.on_message(commandpro(["/resume", "Resume"]) & other_filters)
+@Client.on_message(commandpro(["/resume", "#r", "Resume"]) & other_filters)
 @errors
 @authorized_users_only
 async def resume(_, message: Message):
@@ -427,5 +427,5 @@ async def admincache(client, message: Message):
 
     await message.reply_photo(
                               photo="https://telegra.ph/file/3809ee0cf6a7567e86a5c.jpg",
-                              caption="**AKG_ANTHESM\n REALOADING BOT...**"
+                              caption="**CADEN_OP\n REALOADING BOT...**"
     )
