@@ -176,7 +176,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/73160485c4b5e9a9a8aab.jpg"
+        thumb_name = "https://telegra.ph/file/57aab166a5805db73592d.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -233,7 +233,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/73160485c4b5e9a9a8aab.jpg"
+            thumb_name = "https://telegra.ph/file/57aab166a5805db73592d.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -347,7 +347,7 @@ async def play(_, message: Message):
 async def pause(_, message: Message):
     await callsmusic.pytgcalls.pause_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/73160485c4b5e9a9a8aab.jpg", 
+                             photo="https://telegra.ph/file/57aab166a5805db73592d.jpg", 
                              caption="**CADEN MUSIC BEAST\ NOW PLAING...**"
     )
 
@@ -358,7 +358,7 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await callsmusic.pytgcalls.resume_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/73160485c4b5e9a9a8aab.jpg", 
+                             photo="https://telegra.ph/file/57aab166a5805db73592d.jpg", 
                              caption="**CADEN MUSIC BEAST\n NOW PLAYING SONG ...**"
     )
 
@@ -392,7 +392,7 @@ async def skip(_, message: Message):
                 )
 
     await message.reply_photo(
-                             photo="https://telegra.ph/file/73160485c4b5e9a9a8aab.jpg", 
+                             photo="https://telegra.ph/file/57aab166a5805db73592d.jpg", 
                              caption=f'**CADEN MUSIC BEAST\n SONG SKKIPED ...**'
    ) 
 
@@ -408,7 +408,7 @@ async def stop(_, message: Message):
 
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/73160485c4b5e9a9a8aab.jpg", 
+                             photo="https://telegra.ph/file/57aab166a5805db73592d.jpg", 
                              caption="**CADEN MUSIC BEAST\ SONG TERMINATED ...**"
     )
 
@@ -426,6 +426,6 @@ async def admincache(client, message: Message):
     )
 
     await message.reply_photo(
-                              photo="https://telegra.ph/file/73160485c4b5e9a9a8aab.jpg",
+                              photo="https://telegra.ph/file/57aab166a5805db73592d.jpg",
                               caption="**CADEN_OP\n REALOADING BOT...**"
     )
