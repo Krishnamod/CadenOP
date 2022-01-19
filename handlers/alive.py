@@ -32,40 +32,151 @@ async def _human_time_duration(seconds):
    
 
 @Client.on_message(command("start") & filters.private & ~filters.edited)
+
 async def start_(client: Client, message: Message):
+
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/3809ee0cf6a7567e86a5c.jpg",
+
+        photo=f"https://telegra.ph/file/73160485c4b5e9a9a8aab.jpg",
+
         caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
-BOT FAST LIKE FAST AS FUCK](https://t.me/AKG_ANTHESM)
+
+BOT FAST LIKE FAST AS FUCK] [ᴄᴀᴅᴇɴ](https://t.me/Caden_OP)
+
+ғᴏʀ ᴄʜᴇᴄᴋ ᴄᴏᴍᴍᴀɴᴅs /cmdlist
+
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : [AKG_ANTHESM](https://t.me/Caden_OP)
-┣★ 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 : [bakchodi point](https://anthesm_chat_box)
+
+┣★ 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : [ɢʀᴏᴜᴘ](https://t.me/VAMPIRE_EMPIRE_OFFICIAL)
+
+┣★ 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 : [ʟᴜᴄʏ](https://t.me/TEAM_VAMPIRES)
+
 ┗━━━━━━━━━━━━━━━━━┛
 
 ━━━━━━━━━━━━━━━━━━━━━━━━**""",
+
     reply_markup=InlineKeyboardMarkup(
+
             [
+
                 [
+
                     InlineKeyboardButton(
+
                        " ❰ 𝘼𝙙𝙙 𝙈𝙚 𝙄𝙣 𝙂𝙧𝙤𝙪𝙥 ❱", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+
                 ]
+
                 
+
            ]
+
         ),
+
     )
+
     
+
     
+
 @Client.on_message(commandpro(["/start", "/alive", "legend"]) & filters.group & ~filters.edited)
+
 async def start(client: Client, message: Message):
+
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/3809ee0cf6a7567e86a5c.jpg",
+
+        photo=f"https://telegra.ph/file/57aab166a5805db73592d.jpg",
+
         caption=f"""""",
+
         reply_markup=InlineKeyboardMarkup(
+
             [
+
                 [
+
                     InlineKeyboardButton(
-                        "JOIN FOR BAKCHODI", url=f"https://t.me/anthesm_chat_box")
+
+                        "JOIN FOR BAKCHODI", url=f"https://t.me/VAMPIRE_EMPIRE_OFFICIAL")
+
                 ]
+
             ]
+
         ),
+
     )
+
+@Client.on_message(commandpro(["caden", "Owner"]) & filters.group & ~filters.edited)
+
+async def start(client: Client, message: Message):
+
+    await message.reply_photo(
+
+        photo=f"https://telegra.ph/file/33a6f809c3ce77cdf51be.jpg",
+
+        caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
+
+ᴄᴀᴅᴇɴ ɪs ᴍʏ ᴏᴡɴᴇʀ😎 ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪssᴜᴇ🙁 ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ❣️🌹] [ᴄᴀᴅᴇɴ](https://t.me/Caden_OP)
+
+━━━━━━━━━━━━━━━━━━━━━━━━**""",
+
+        reply_markup=InlineKeyboardMarkup(
+
+            [
+
+                [
+
+                    InlineKeyboardButton(
+
+                        "ᴄᴀᴅᴇɴ's ᴡɪғᴇ❣️", url=f"https://t.me/Caden_XD")
+
+                ]
+
+            ]
+
+        ),
+
+    )
+
+    
+
+    
+
+@Client.on_message(filters.command(["cmdlist", "start@Caden_music_bot"]) & filters.private & ~filters.channel)
+
+async def cmdlist(_, message: Message):
+
+    await message.reply_text(
+
+        text="""**Caden Music Bot : Help Menu**
+
+__× First Add Me To Your Group..
+
+× Promote Me As Admin In Your Group With All Permission..__
+
+**🏷 Common Commands.**
+
+• `/play, #, play` - Song Name : __Plays Via Youtube__
+
+• `Caden` : __About bot owner__
+
+**🏷 Group Admin Commands.**
+
+• `/next, next` : __Skips current music__
+
+• `/pause, #p` : __Pause Playing Music__
+
+• `#r, /resume` : __Resume Playing Music__
+
+• `/end, skip` : __Stops playing Music.__""",
+
+        reply_markup=InlineKeyboardMarkup(
+
+              [[
+
+              InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/VAMPIRE_EMPIRE_OFFICIAL")
+
+              ]]
+
+          )
